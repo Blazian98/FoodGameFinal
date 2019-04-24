@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Chefs Hand</string>
+    <string name="search_recipe">Search Our Recipes!!!</string>
+    <string name="meal_categories">Meal Categories</string>
+</resources>
