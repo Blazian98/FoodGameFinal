@@ -13,6 +13,9 @@ import java.util.List;
 
 public class ViewPagerCategoryAdapter extends FragmentPagerAdapter {
 
+    //code for fragment pager adapter modified from https://www.youtube.com/watch?v=f7V5m1bpcZU to suit the application
+    //code for bundle and intent modified from https://www.youtube.com/watch?v=3YCkW7J9NP0 to suit the application
+
     private List<Categories.Category> categories;
 
     public ViewPagerCategoryAdapter(FragmentManager fm, List<Categories.Category> categories) {

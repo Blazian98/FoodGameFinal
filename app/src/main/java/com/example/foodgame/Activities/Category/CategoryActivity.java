@@ -16,6 +16,8 @@ import java.util.List;
 
 public class CategoryActivity extends AppCompatActivity {
 
+    //code modified from https://www.youtube.com/watch?v=xEHHdpxW7iA, https://www.youtube.com/watch?v=WtLZK1kh-yM, https://www.youtube.com/watch?v=Gi46yco8OJg, https://www.youtube.com/watch?v=SaXYFHYGLj4 to suit the application
+
     Toolbar toolbar;
     TabLayout tabLayout;
     ViewPager viewPager;

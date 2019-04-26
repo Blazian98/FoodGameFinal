@@ -19,6 +19,10 @@ import static com.example.foodgame.Activities.MainCategory.MainCategoryActivity.
 
 public class DetailActivity extends AppCompatActivity implements DetailView {
 
+    //code for collapsing toolbar has been modified from https://www.youtube.com/watch?v=-pTW3EOPxtQ to suit my application
+    // code for append from https://www.youtube.com/watch?v=9o3sSjU2wYc to suit my application
+    // code for opening a webpage modified from from https://www.youtube.com/watch?v=2dE61ZTRviY to suit the application
+
     Toolbar toolbar;
     AppBarLayout appBarLayout;
     CollapsingToolbarLayout collapsingToolbarLayout;
@@ -90,6 +94,7 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
         instructions.setText(meal.getStrInstructions());
         setupActionBar();
 
+        //   \u2022 is a • (dot point)
 
         if (!meal.getStrIngredient1().isEmpty()) {
             ingredients.append("\n \u2022 " + meal.getStrIngredient1());

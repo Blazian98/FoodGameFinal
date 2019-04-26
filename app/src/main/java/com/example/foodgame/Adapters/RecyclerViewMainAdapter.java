@@ -20,7 +20,11 @@ import butterknife.ButterKnife;
 
 public class RecyclerViewMainAdapter extends RecyclerView.Adapter<RecyclerViewMainAdapter.RecyclerViewHolder> {
 
-        private List<Categories.Category> categories;
+    //code for recycler view adapter modified from https://www.youtube.com/watch?v=gGFvbvkZiMs to suit the application
+    //code for picasso modified from https://www.youtube.com/watch?v=japhFMXAJZw, https://www.youtube.com/watch?v=sLEqq9rX-3k to suit the application
+
+
+    private List<Categories.Category> categories;
         private Context context;
         private static ClickListener clickListener;
 
@@ -37,13 +41,6 @@ public class RecyclerViewMainAdapter extends RecyclerView.Adapter<RecyclerViewMa
             return new RecyclerViewHolder(view);
         }
 
-
-
-
-//Code modified from ..
-
-
-
     @Override
         public void onBindViewHolder(@NonNull RecyclerViewMainAdapter.RecyclerViewHolder viewHolder, int i) {
 
@@ -54,6 +51,7 @@ public class RecyclerViewMainAdapter extends RecyclerView.Adapter<RecyclerViewMa
             viewHolder.categoryName.setText(strCategoryName);
         }
 
+    //code for Butter Knife learnt from https://www.youtube.com/watch?v=KeG0Rm8wyO4 to suit the application
 
         @Override
         public int getItemCount() {

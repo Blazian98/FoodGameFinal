@@ -8,6 +8,9 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class CategoryPresenter {
+
+    //code modified from https://www.youtube.com/watch?v=4JGvDUlfk7Y to suit the application
+
     private CategoryView view;
 
     public CategoryPresenter(CategoryView view) {

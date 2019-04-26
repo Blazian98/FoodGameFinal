@@ -12,13 +12,13 @@ import retrofit2.Response;
 
 public class MainCategoryPresenter {
 
+    //code modified from https://www.youtube.com/watch?v=4JGvDUlfk7Y to suit the application
+
     private MainCategoryView view;
 
     public MainCategoryPresenter(MainCategoryView view) {
         this.view = view;
     }
-
-    //Code modified from ... (That YouTube Video)
 
     void getMeals() {
         Call<Meals> mealsCall = Util.getApi().getMeal();

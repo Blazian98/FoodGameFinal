@@ -11,6 +11,8 @@ import com.example.foodgame.R;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
 
+    //code for OnclickListener for CardView modified from https://www.youtube.com/watch?v=d6CfaWW7G5Q to suit the application
+
     private CardView recipeCard;
 
     @Override

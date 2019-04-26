@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.foodgame.Activities.ItemDetail.DetailActivity;
@@ -21,6 +24,8 @@ import java.io.Serializable;
 import java.util.List;
 
 public class MainCategoryActivity extends AppCompatActivity implements MainCategoryView {
+
+    //code modified from https://www.youtube.com/watch?v=QTiQawMBPUA to suit the application
 
     ViewPager viewPagerMeal;
     RecyclerView recyclerViewCategory;
@@ -43,6 +48,7 @@ public class MainCategoryActivity extends AppCompatActivity implements MainCateg
         presenter.getMeals();
         presenter.getCategories();
     }
+
 
     @Override
     public void setMeal(List<Meals.Meal> meal) {

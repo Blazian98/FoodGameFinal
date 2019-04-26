@@ -30,6 +30,10 @@ import static com.example.foodgame.Activities.MainCategory.MainCategoryActivity.
 
 public class CategoryFragment extends Fragment implements CategoryView {
 
+    //code for fragment and recycler view modified from https://www.youtube.com/watch?v=oBhgyiBVd3k to suit the application
+    //code for for sending data and fragment modified from https://www.youtube.com/watch?v=HZYYjY2NSKk, https://www.youtube.com/watch?v=WtLZK1kh-yM to suit the application
+
+
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
     @BindView(R.id.imageCategory)
@@ -47,6 +51,7 @@ public class CategoryFragment extends Fragment implements CategoryView {
         View view = inflater.inflate(R.layout.fragment_category, container, false);
         ButterKnife.bind(this, view);
         return view;
+
     }
 
     @Override
@@ -64,9 +69,6 @@ public class CategoryFragment extends Fragment implements CategoryView {
         }
 
     }
-
-
-
 
     @Override
     public void setMeals(List<Meals.Meal> meals) {

@@ -11,6 +11,8 @@ import retrofit2.Response;
 
 public class DetailPresenter {
 
+    //code modified from https://www.youtube.com/watch?v=4JGvDUlfk7Y to suit the application
+
     private DetailView view;
 
     public DetailPresenter(DetailView view) {
