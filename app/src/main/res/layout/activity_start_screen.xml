@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Activities.StartScreenActivity">
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="67dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="241dp"
+        android:layout_marginTop="93dp"
+        android:src="@drawable/tomato" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="65dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="503dp"
+        android:src="@drawable/mushroom" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="76dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="517dp"
+        android:src="@drawable/cheese" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="259dp"
+        android:layout_height="381dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="214dp"
+        android:src="@drawable/white_logo" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/buttonshape"
+        android:lineSpacingExtra="8sp"
+        android:text="Get Started"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="18sp"
+        android:textColor="#6f6f6f" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="72dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="323dp"
+        android:layout_marginTop="143dp"
+        android:src="@drawable/capsicun" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="72dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/brocoli" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="95dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="27dp"
+        android:src="@drawable/bread" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="99dp"
+        android:layout_height="102dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="554dp"
+        android:src="@drawable/fork" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="72dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="139dp"
+        android:src="@drawable/mushroom" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="72dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="314dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/cheese" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="57dp"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="544dp"
+        android:src="@drawable/carrot" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="72dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/salt" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="72dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/onion" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="61dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="525dp"
+        android:src="@drawable/tomato" />
+
+</RelativeLayout>

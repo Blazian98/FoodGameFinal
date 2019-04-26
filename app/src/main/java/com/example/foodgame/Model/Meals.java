@@ -7,6 +7,8 @@ import java.util.List;
 
 public class Meals {
 
+    // Generated Java Objects from JSON using http://www.jsonschema2pojo.org/
+
     @SerializedName("meals")
     @Expose
     private List<Meal> meals = null;

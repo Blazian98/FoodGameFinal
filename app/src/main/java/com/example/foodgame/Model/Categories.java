@@ -8,6 +8,8 @@ import java.util.List;
 
 public class Categories implements Serializable {
 
+    // Generated Java Objects from JSON using http://www.jsonschema2pojo.org/
+
     @SerializedName("categories")
     @Expose
     private List<Category> categories;

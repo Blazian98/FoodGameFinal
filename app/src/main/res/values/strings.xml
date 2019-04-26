@@ -2,4 +2,19 @@
     <string name="app_name">Chefs Hand</string>
     <string name="search_recipe">Search Our Recipes!!!</string>
     <string name="meal_categories">Meal Categories</string>
+    <string name="category">Category</string>
+    <string name="country">Country</string>
+    <string name="instructions">INSTRUCTIONS</string>
+    <string name="text_place_holder">Insert Text Here</string>
+    <string name="Ingredients">INGREDIENTS</string>
+    <string name="youtube">YOUTUBE</string>
+    <string name="source">SOURCE</string>
+    <string name="favourite">Favourite</string>
+    <string name="learning_hub">Learning Hub</string>
+    <string name="home_subheading">Learn recipes and test your ability</string>
+    <string name="first_activity_label">Explore Our Recipes</string>
+    <string name="second_activity_label">Test Your Knowledge</string>
+    <string name="third_activity_label">Try a Random Recipe</string>
+    <string name="meal_name">Meal Name</string>
+
 </resources>

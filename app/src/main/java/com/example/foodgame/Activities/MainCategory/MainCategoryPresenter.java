@@ -1,4 +1,4 @@
-package com.example.foodgame.Activities.Main;
+package com.example.foodgame.Activities.MainCategory;
 
 import android.support.annotation.NonNull;
 
@@ -10,11 +10,11 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MainPresenter {
+public class MainCategoryPresenter {
 
-    private MainView view;
+    private MainCategoryView view;
 
-    public MainPresenter(MainView view) {
+    public MainCategoryPresenter(MainCategoryView view) {
         this.view = view;
     }
 
@@ -24,7 +24,7 @@ public class MainPresenter {
         Call<Meals> mealsCall = Util.getApi().getMeal();
         mealsCall.enqueue(new Callback<Meals>() {
             @Override
-            public void onResponse(@NonNull Call<Meals> call,@NonNull Response<Meals> response) {
+            public void onResponse(@NonNull Call<Meals> call, @NonNull Response<Meals> response) {
 
                 if(response.isSuccessful() && response.body() != null){
                     view.setMeal(response.body().getMeals());

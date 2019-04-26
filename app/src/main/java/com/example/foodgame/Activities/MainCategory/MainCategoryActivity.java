@@ -1,4 +1,4 @@
-package com.example.foodgame.Activities.Main;
+package com.example.foodgame.Activities.MainCategory;
 
 import android.content.Intent;
 import android.support.v4.view.ViewPager;
@@ -6,9 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.TextView;
 
+import com.example.foodgame.Activities.ItemDetail.DetailActivity;
 import com.example.foodgame.Adapters.RecyclerViewMainAdapter;
 import com.example.foodgame.Activities.Category.CategoryActivity;
+import com.example.foodgame.Adapters.ViewPagerHeaderAdapter;
 import com.example.foodgame.Model.Categories;
 import com.example.foodgame.Model.Meals;
 import com.example.foodgame.R;
@@ -17,31 +20,43 @@ import com.example.foodgame.Util;
 import java.io.Serializable;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements MainView {
+public class MainCategoryActivity extends AppCompatActivity implements MainCategoryView {
 
     ViewPager viewPagerMeal;
     RecyclerView recyclerViewCategory;
 
-    MainPresenter presenter;
+    MainCategoryPresenter presenter;
 
     public static final String EXTRA_CATEGORY = "category";
     public static final String EXTRA_POSITION = "position";
+    public static final String EXTRA_DETAIL = "detail";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_category);
 
         viewPagerMeal = findViewById(R.id.viewPagerHeader);
         recyclerViewCategory = findViewById(R.id.recyclerCategory);
 
-        presenter = new MainPresenter(this);
+        presenter = new MainCategoryPresenter(this);
         presenter.getMeals();
         presenter.getCategories();
     }
 
     @Override
     public void setMeal(List<Meals.Meal> meal) {
+        ViewPagerHeaderAdapter headerAdapter = new ViewPagerHeaderAdapter(meal, this);
+        viewPagerMeal.setAdapter(headerAdapter);
+        viewPagerMeal.setPadding(20, 0, 150, 0);
+        headerAdapter.notifyDataSetChanged();
+
+        headerAdapter.setOnItemClickListener((view, position) -> {
+            TextView mealName = view.findViewById(R.id.mealName);
+            Intent intent = new Intent(getApplicationContext(), DetailActivity.class);
+            intent.putExtra(EXTRA_DETAIL, mealName.getText().toString());
+            startActivity(intent);
+        });
 
     }
 

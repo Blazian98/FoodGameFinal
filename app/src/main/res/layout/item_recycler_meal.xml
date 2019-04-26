@@ -24,7 +24,7 @@
         <TextView
             android:text="@string/meal_categories"
             android:textSize="16sp"
-            android:textColor="@color/colourPrimaryText"
+            android:textColor="@color/colorPrimaryText"
             android:gravity="center"
             android:maxLines="2"
             android:ellipsize="end"

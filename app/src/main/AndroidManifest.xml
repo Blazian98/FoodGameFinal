@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.Main.MainActivity"
+        <activity android:name=".Activities.StartScreenActivity"
                   android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +27,13 @@
         <activity
             android:name=".Activities.ItemDetail.DetailActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Activities.MainCategory.MainCategoryActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:theme="@style/AppTheme"/>
+
     </application>
 
 </manifest>

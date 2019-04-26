@@ -1,5 +1,6 @@
 package com.example.foodgame.Activities.Category;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -12,8 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.example.foodgame.Activities.ItemDetail.DetailActivity;
 import com.example.foodgame.Adapters.RecyclerViewMealByCategory;
 import com.example.foodgame.Model.Meals;
 import com.example.foodgame.R;
@@ -24,6 +25,8 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+import static com.example.foodgame.Activities.MainCategory.MainCategoryActivity.EXTRA_DETAIL;
 
 public class CategoryFragment extends Fragment implements CategoryView {
 
@@ -74,7 +77,10 @@ public class CategoryFragment extends Fragment implements CategoryView {
         adapter.notifyDataSetChanged();
 
         adapter.setOnItemClickListener((view, position) -> {
-            Toast.makeText(getActivity(), "meal : " + meals.get(position).getStrMeal(), Toast.LENGTH_SHORT).show();
+            TextView mealName = view.findViewById(R.id.mealName);
+            Intent intent = new Intent(getActivity(), DetailActivity.class);
+            intent.putExtra(EXTRA_DETAIL, mealName.getText().toString());
+            startActivity(intent);
         });
 
     }
