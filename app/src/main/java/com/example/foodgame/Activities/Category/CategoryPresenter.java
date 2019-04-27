@@ -1,5 +1,7 @@
 package com.example.foodgame.Activities.Category;
 
+import android.support.annotation.NonNull;
+
 import com.example.foodgame.Model.Meals;
 import com.example.foodgame.Util;
 
@@ -22,7 +24,7 @@ public class CategoryPresenter {
        Call<Meals> mealsCall = Util.getApi().getMealByCategory(category);
        mealsCall.enqueue(new Callback<Meals>() {
            @Override
-           public void onResponse(Call<Meals> call, Response<Meals> response) {
+           public void onResponse(@NonNull Call<Meals> call, @NonNull Response<Meals> response) {
                if (response.isSuccessful() && response.body() != null){
                    view.setMeals(response.body().getMeals());
                }
@@ -32,7 +34,7 @@ public class CategoryPresenter {
            }
 
            @Override
-           public void onFailure(Call<Meals> call, Throwable t) {
+           public void onFailure(@NonNull Call<Meals> call, @NonNull Throwable t) {
                view.onErrorLoading(t.getLocalizedMessage());
 
            }

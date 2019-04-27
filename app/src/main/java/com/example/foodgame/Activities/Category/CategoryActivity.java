@@ -35,7 +35,7 @@ public class CategoryActivity extends AppCompatActivity {
         initIntent();
 
     }
-
+    @SuppressWarnings("unchecked")
     private void initIntent() {
         Intent intent = getIntent();
         List<Categories.Category> categories = (List<Categories.Category>) intent.getSerializableExtra(MainCategoryActivity.EXTRA_CATEGORY);

@@ -59,7 +59,7 @@
                     android:layout_height="50dp"
                     android:drawableStart="@drawable/search_icon"
                     android:gravity="center_vertical"
-                    android:hint="Search Our Recipes!"
+                    android:hint="@string/search_recipe"
                     android:padding="10dp"
                     android:singleLine="false"
                     android:textColor="@color/colorPrimaryLight" />

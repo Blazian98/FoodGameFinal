@@ -13,15 +13,16 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     //code for OnclickListener for CardView modified from https://www.youtube.com/watch?v=d6CfaWW7G5Q to suit the application
 
-    private CardView recipeCard;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        recipeCard = findViewById(R.id.recipe_card);
+        CardView recipeCard = findViewById(R.id.recipe_card);
         recipeCard.setOnClickListener(this);
+
+        CardView randomCard = findViewById(R.id.random_card);
+        randomCard.setOnClickListener(this);
     }
 
     @Override
@@ -29,9 +30,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         Intent i;
 
         switch (v.getId()) {
-            case R.id.recipe_card : i = new Intent(this, MainCategoryActivity.class);
-            startActivity(i);
-            break;
+            case R.id.recipe_card : i = new Intent(this, MainCategoryActivity.class);startActivity(i); break ;
+            case R.id.random_card : i = new Intent(this, RandomActivity.class); startActivity(i); break ;
             default:break;
         }
 
