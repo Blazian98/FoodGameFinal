@@ -17,6 +17,35 @@
     <string name="third_activity_label">Try a Random Recipe</string>
     <string name="meal_name">Meal Name</string>
     <string name="get_started">Get Started</string>
-    <string name="random_button">New Random Recipe!</string>
+    <string name="category_name">Category : </string>
+    <string name="question">Question : </string>
+    <string name="confirm">Confirm</string>
+    <string name="score">Score : </string>
+    <string name="option1_correct">Option 1 is the correct answer</string>
+    <string name="option2_correct">Option 2 is the correct answer</string>
+    <string name="option3_correct">Option 3 is the correct answer</string>
+    <string name="option4_correct">Option 4 is the correct answer</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="popup_message1">Work your way through these beginner level quizs in order to gain some early understanding as well as tip and tricks in to being confident cooks!</string>
+    <string name="popup_message2">Choose from of the available categories and keep working in getting your highest score possible!</string>
+    <string name="score_0">Score: 0</string>
+    <string name="question_fraction">Question: 1/x</string>
+    <string name="timer">00:30</string>
+    <string name="question_placeholder">Here will be the question text\nHere will be the question text\nHere will be the question text</string>
+    <string name="option1">Option 1</string>
+    <string name="option2">Option 2</string>
+    <string name="option3">Option 3</string>
+    <string name="option4">Option 4</string>
+    <string name="quiz_name">Little Chef"'"s Quiz</string>
+    <string name="high_score_0">High score : 0</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="high_score">High score : </string>
+    <string name="random_title">Are you ready?</string>
+    <string name="random_button">Click Me!</string>
+
+
+
+
 
 </resources>

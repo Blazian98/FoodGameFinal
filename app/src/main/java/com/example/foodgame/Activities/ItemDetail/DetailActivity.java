@@ -21,7 +21,7 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
 
     //code for collapsing toolbar has been modified from https://www.youtube.com/watch?v=-pTW3EOPxtQ to suit my application
     // code for append from https://www.youtube.com/watch?v=9o3sSjU2wYc to suit my application
-    // code for opening a webpage modified from from https://www.youtube.com/watch?v=2dE61ZTRviY to suit the application
+    // code for opening a web page modified from from https://www.youtube.com/watch?v=2dE61ZTRviY to suit the application
 
     Toolbar toolbar;
     AppBarLayout appBarLayout;

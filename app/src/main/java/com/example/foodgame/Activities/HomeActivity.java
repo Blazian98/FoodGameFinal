@@ -7,6 +7,8 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 
 import com.example.foodgame.Activities.MainCategory.MainCategoryActivity;
+import com.example.foodgame.Activities.Quiz.QuizStartingScreenActivity;
+import com.example.foodgame.Activities.Randomiser.RandomActivity;
 import com.example.foodgame.R;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
@@ -21,6 +23,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         CardView recipeCard = findViewById(R.id.recipe_card);
         recipeCard.setOnClickListener(this);
 
+        CardView quizCard = findViewById(R.id.quiz_card);
+        quizCard.setOnClickListener(this);
+
         CardView randomCard = findViewById(R.id.random_card);
         randomCard.setOnClickListener(this);
     }
@@ -30,8 +35,15 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         Intent i;
 
         switch (v.getId()) {
-            case R.id.recipe_card : i = new Intent(this, MainCategoryActivity.class);startActivity(i); break ;
-            case R.id.random_card : i = new Intent(this, RandomActivity.class); startActivity(i); break ;
+            case R.id.recipe_card : i = new Intent(this, MainCategoryActivity.class);
+            startActivity(i);
+            break ;
+            case R.id.quiz_card : i = new Intent(this, QuizStartingScreenActivity.class);
+            startActivity(i);
+            break ;
+            case R.id.random_card : i = new Intent(this, RandomActivity.class);
+            startActivity(i);
+            break ;
             default:break;
         }
 

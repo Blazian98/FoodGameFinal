@@ -1,4 +1,4 @@
-package com.example.foodgame.Activities;
+package com.example.foodgame.Activities.Randomiser;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -27,6 +27,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RandomActivity extends AppCompatActivity {
 
+    //code for collapsing toolbar has been modified from https://www.youtube.com/watch?v=-pTW3EOPxtQ to suit my application
+    // code for append from https://www.youtube.com/watch?v=9o3sSjU2wYc to suit my application
+    // code for opening a web page modified from from https://www.youtube.com/watch?v=2dE61ZTRviY to suit the application
+
     Button button;
     TextView Category;
     TextView Country;
@@ -48,6 +52,9 @@ public class RandomActivity extends AppCompatActivity {
     }
 
     private class MealsClass extends AsyncTask<Void, Void, List<Meals.Meal>> {
+
+        //coded this way to include an example of the use of AsyncTask in our application
+
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://www.themealdb.com/api/json/v1/1/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -58,7 +65,7 @@ public class RandomActivity extends AppCompatActivity {
         private ProgressDialog dialog = new ProgressDialog(RandomActivity.this);
 
         protected void onPreExecute() {
-            this.dialog.setMessage("Getting a perfect recipe for you!! Please Wait");
+            this.dialog.setMessage("Getting the perfect recipe for you!! Please Wait");
             this.dialog.show();
         }
 
@@ -117,102 +124,167 @@ public class RandomActivity extends AppCompatActivity {
             ingredients.setText(" ");
             measures.setText(" ");
 
-                if (!result.get(0).getStrIngredient1().isEmpty()) {
+            // \u2022 is a •
+
+            if (result.get(0).getStrIngredient1()==null) {
+            } else {
+                if (result.get(0).getStrIngredient1().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient1());
                 }
+            }
 
-                if (!result.get(0).getStrIngredient2().isEmpty()) {
+            if (result.get(0).getStrIngredient2()==null) {
+            } else {
+                if (result.get(0).getStrIngredient2().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient2());
                 }
+            }
 
+            if (result.get(0).getStrIngredient3()==null) {
+            } else {
                 if (result.get(0).getStrIngredient3().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient3());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient4()==null) {
+            } else {
                 if (result.get(0).getStrIngredient4().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient4());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient5()==null) {
+            } else {
                 if (result.get(0).getStrIngredient5().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient5());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient6()==null) {
+            } else {
                 if (result.get(0).getStrIngredient6().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient6());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient7()==null) {
+            } else {
                 if (result.get(0).getStrIngredient7().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient7());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient8()==null) {
+            } else {
                 if (result.get(0).getStrIngredient8().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient8());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient9()==null) {
+            } else {
                 if (result.get(0).getStrIngredient9().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient9());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient10()==null) {
+            } else {
                 if (result.get(0).getStrIngredient10().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient10());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient11()==null) {
+            } else {
                 if (result.get(0).getStrIngredient11().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient11());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient12()==null) {
+            } else {
                 if (result.get(0).getStrIngredient12().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient12());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient13()==null) {
+            } else {
                 if (result.get(0).getStrIngredient13().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient13());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient14()==null) {
+            } else {
                 if (result.get(0).getStrIngredient14().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient14());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient15()==null) {
+            } else {
                 if (result.get(0).getStrIngredient15().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient15());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient16()==null) {
+            } else {
                 if (result.get(0).getStrIngredient16().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient16());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient17()==null) {
+            } else {
                 if (result.get(0).getStrIngredient17().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient17());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient18()==null) {
+            } else {
                 if (result.get(0).getStrIngredient18().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient18());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient19()==null) {
+            } else {
                 if (result.get(0).getStrIngredient19().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient19());
                 }
+            }
 
-
+            if (result.get(0).getStrIngredient20()==null) {
+            } else {
                 if (result.get(0).getStrIngredient20().isEmpty()) {
+                } else {
                     ingredients.append("\n \u2022 " + result.get(0).getStrIngredient20());
                 }
+            }
 
 
             if (!result.get(0).getStrMeasure1().isEmpty() && !Character.isWhitespace(result.get(0).getStrMeasure1().charAt(0))) {

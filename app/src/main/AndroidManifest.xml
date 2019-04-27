@@ -35,10 +35,15 @@
             android:name=".Activities.HomeActivity"
             android:theme="@style/AppTheme"/>
         <activity
-            android:name=".Activities.RandomActivity"
-            >
+            android:name=".Activities.Randomiser.RandomActivity"/>
 
+        <activity
+            android:name=".Activities.Quiz.QuizStartingScreenActivity"/>
+        <activity android:name=".Activities.Quiz.QuizActivity" />
+        <activity android:name=".Activities.Quiz.PopupActivity"
+            android:theme="@style/AppTheme.PopMe">
         </activity>
+
 
     </application>
 
